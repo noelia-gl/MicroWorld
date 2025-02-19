@@ -41,6 +41,30 @@ require "config.php";
                 inputTypeRadios.forEach(radio => {
                     radio.addEventListener('change', toggleInputSections);
                 });
+
+                // Example sequences 
+                document.getElementById('useExampleBtn').addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent form submission
+    
+                    // Example FASTA sequences for three proteins
+                    const exampleSequences = `
+>sp|P01308|INS_HUMAN Insulin - Homo sapiens
+MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED
+LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
+>sp|P01315|INS_PIG Insulin - Sus scrofa (Pig)
+MALWTRLLPLLALLALWAPAPAQAFVNQHLCGSHLVEALYLVCGERGFFYTPKARREAEN
+PQAGAVELGGGLGGLQALALEGPPQKRGIVEQCCTSICSLYQLENYCN
+>sp|P01321|INS_BOVIN Insulin - Bos taurus (Bovine)
+MALWIRSLPLLALLVLWEPKPAQAFVKQHLCGPHLVEALYLVCGERGFFYTPKARREVEG
+PQVGALELAGGPGAGGLEGPPQKRGIVEQCCASVCSLYQLENYCN`;
+    
+                    // Set the textarea content
+                    document.getElementById('seqQuery').value = exampleSequences;
+    
+                    // Make sure the "Enter sequences" radio button is selected
+                    document.querySelector('input[name="input_type"][value="sequences"]').checked = true;
+                    toggleInputSections();
+                });
                 
                 // Initialize display based on default selection
                 toggleInputSections();
@@ -70,6 +94,9 @@ require "config.php";
                     </div>
 
                     <div id="seqQuerySection">
+                        <div class="textarea-controls">
+                            <button type="button" id="useExampleBtn" class="btn btn-info">Use Example</button>
+                        </div>
                         <textarea name="seqQuery" id="seqQuery" rows="6" placeholder="Enter FASTA format sequences"></textarea>
                     </div>
 
@@ -101,8 +128,6 @@ require "config.php";
                     </label>
 
                     <h4>Additional Options</h4>
-                    <label><input type="checkbox" name="full" value="1">Full distance matrix</label>
-                    <label><input type="checkbox" name="force" value="1">Force overwrite</label>
                     <label>Number of iterations:
                         <input type="number" name="iterations" min="0" max="5" value="0">
                     </label>
