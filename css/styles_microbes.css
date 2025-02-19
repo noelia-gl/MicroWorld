@@ -1,0 +1,107 @@
+/* Microbe-specific styles */
+:root {
+    --staph-aureus-color: #ffd900ea;  /* Yellow for S. aureus */
+    --s-pneumoniae-color: #ffb6c1;  /* Pink for S. pneumoniae */
+    /* Add more microbe colors as needed */
+  }
+
+  /* Parallax effect for section titles */
+  .section-title,
+  .section-title-parallax {
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .section-title::before,
+  .section-title-parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.section-title .container,
+.section-title-parallax .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title h1,
+.section-title h2,
+.section-title-parallax h1,
+.section-title-parallax h2,
+.microbe-header {
+  font-family: 'Playfair Display', serif;
+}
+
+
+  /* Custom highlight colors for different microbes */
+.staph-aureus .highlight {
+    color: var(--staph-aureus-color);
+    font-weight: bold;
+  }
+
+  .s-pneumoniae .highlight {
+    color: var(--s-pneumoniae-color);
+    font-weight: bold;
+  }
+
+/* Badge colors for microbes */
+.badge-staph-aureus {
+    background-color: var(--staph-aureus-color);
+    color: #333;
+  }
+
+  .badge-s-pneumoniae {
+    background-color: var(--s-pneumoniae-color);
+    color: #333;
+  }
+
+
+/* Reference links */
+.references-list a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.references-list a:hover {
+  text-decoration: underline;
+  color: #0a58ca;
+}
+
+/* Active states for references */
+.references-list a:active {
+  color: #0a58ca;
+  transform: translateY(1px);
+}
+
+/* Additional styling for microbe-specific pages */
+.microbe-header {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom animation for each microbe type */
+@keyframes pulseStaphAureus {
+  0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+/* Card highlight for Staph aureus */
+.staph-aureus .card:hover {
+    border-color: var(--staph-aureus-color);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+

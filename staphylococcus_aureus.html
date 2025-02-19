@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <title>Staphylococcus aureus - MicroWorld</title>
+    <link rel="icon" href="images/bacteria1.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to External CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles_microbes.css" rel="stylesheet">
+  </head>
+
+  <body class="staph-aureus">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="bacteria-wrapper">
+        <img src="images/staph_aureus2.jpg" alt="Loading...">
+      </div>
+    </div>
+
+    <!-- Navigation bar -->
+    <header class="section page-header">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/bacteria1.png" alt="Logo" width="25">
+            <strong>MicroWorld</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#bacteria-cards" id="microbesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Microbes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="microbesDropdown">
+                    <li><a class="dropdown-item" href="staphylococcus_aureus.html"><em> Staphylococcus aureus</em></a></li>
+                    <li><a class="dropdown-item" href="streptococcus_pneumoniae.html"><em>Streptococcus pneumoniae</em></a></li>
+                    <li><a class="dropdown-item" href="helicobacter_pylori.html"><em>Helicobacter pylori</em></a></li>
+                    <li><a class="dropdown-item" href="mycobacterium_tuberculosis.html"><em>Mycobacterium tuberculosis</em></a></li>
+                    <li><a class="dropdown-item" href="neisseria_meningitidis.html"><em>Neisseria meningitidis</em></a></li>
+                    <li><a class="dropdown-item" href="human_papillomavirus.html"><em>Human papillomavirus</em></a></li>
+                    <li><a class="dropdown-item" href="hepatitis_b.html"><em>Hepatitis B</em></a></li>
+                    <li><a class="dropdown-item" href="plasmidium.html"><em>Plasmidium</em></a></li>
+                    <li><a class="dropdown-item" href="entamoeba_histolytica.html"><em>Entamoeba histolytica</em></a></li>
+                    <li><a class="dropdown-item" href="candida_albicans.html"><em>Candida albicans</em></a></li>
+                </ul>>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="section-microbiota" id="beneficialDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Beneficial Microbes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="beneficialDropdown">
+                  <li><a class="dropdown-item" href="#section-microbiota">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">Lactobacillus</a></li>
+                  <li><a class="dropdown-item" href="#">Bifidobacterium</a></li>
+                  <li><a class="dropdown-item" href="#">Streptococcus thermophilus</a></li>
+                  <li><a class="dropdown-item" href="#">Bacteroides</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="section-resistance">Antimicrobial Resistance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#exercises">Exercises</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Microbe Section -->
+    <section class="section-title parallax" style="background-image: url('images/staph_aureus2.jpg');">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10 text-center text-white">
+            <h1 class="display-4 mb-4" style="animation: slideInDown 1s forwards;"><em>Staphylococcus aureus</em></h1>
+            <p class="lead mb-4" style="animation: slideInUp 1s forwards 0.5s;">A Gram-positive bacterium that can cause a variety of infections in humans.</p>
+            <div class="d-flex justify-content-center" style="animation: fadeIn 1s forwards 1s;">
+              <span class="badge sm-danger me-2">Pathogen</span>  
+              <span class="badge sm-info me-2">Firmicutes</span>
+              <span class="badge sm-secondary">MRSA, Skin infections</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Basic Information Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm" style="animation: fadeInLeft 1s forwards;">
+              <div class="card-body">
+                <h4 class="card-title"><i class="bi bi-info-circle text-primary me-2"></i>Classification</h4>
+                <hr>
+                <dl>
+                  <dt>Kingdom</dt>
+                  <dd>Bacteria</dd>
+                  <dt>Phylum</dt>
+                  <dd>Firmicutes</dd>
+                  <dt>Class</dt>
+                  <dd>Bacilli</dd>
+                  <dt>Order</dt>
+                  <dd>Bacillales</dd>
+                  <dt>Family</dt>
+                  <dd>Staphylococcaceae</dd>
+                  <dt>Genus</dt>
+                  <dd>Staphylococcus</dd>
+                  <dt>Species</dt>
+                  <dd>Staphylococcus aureus</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm" style="animation: fadeIn 1s forwards 0.3s;">
+              <div class="card-body">
+                <h4 class="card-title"><i class="bi bi-microscope text-primary me-2"></i>Morphology</h4>
+                <hr>
+                <dl>
+                  <dt>Shape</dt>
+                  <dd>Cocci (spherical)</dd>
+                  <dt>Size</dt>
+                  <dd>~0.5-1.0 μm in diameter</dd>
+                  <dt>Gram Stain</dt>
+                  <dd>Gram-positive</dd>
+                  <dt>Arrangement</dt>
+                  <dd>Clusters (grape-like)</dd>
+                  <dt>Motility</dt>
+                  <dd>Non-motile</dd>
+                  <dt>Special Features</dt>
+                  <dd>Produces coagulase and catalase, forms golden-yellow colonies</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm" style="animation: fadeInRight 1s forwards 0.6s;">
+              <div class="card-body">
+                <h4 class="card-title"><i class="bi bi-geo-alt text-primary me-2"></i>Habitat & Distribution</h4>
+                <hr>
+                <dl>
+                  <dt>Natural Habitat</dt>
+                  <dd>Human skin and mucous membranes</dd>
+                  <dt>Geographic Distribution</dt>
+                  <dd>Worldwide</dd>
+                  <dt>Human Association</dt>
+                  <dd>Opportunistic pathogen</dd>
+                  <dt>Transmission</dt>
+                  <dd>Direct contact, contaminated surfaces, airborne droplets</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pathogenesis Section with Parallax -->
+    <section class="section-title parallax" style="background-image: url('images/staph_aureus2.jpg');">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10 text-center text-white">
+            <h2 class="mb-4 microbe-header">Pathogenesis & Clinical Significance</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Pathogenesis Content-->  
+    <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="lead">Staphylococcus aureus is an opportunistic pathogen capable of causing a wide range of infections, from superficial skin infections to life-threatening conditions.</p>
+              <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item"><strong class="highlight">Virulence Factors:</strong> Protein A, coagulase, hemolysins, exotoxins</li>
+                  <li class="list-group-item"><strong class="highlight">Associated Diseases:</strong> Skin infections, pneumonia, bacteremia, toxic shock syndrome</li>
+                  <li class="list-group-item"><strong class="highlight">Clinical Symptoms:</strong> Abscesses, fever, swelling, redness, systemic symptoms in severe infections</li>
+                  <li class="list-group-item"><strong class="highlight">High-Risk Groups:</strong> Immunocompromised individuals, hospitalized patients, people with chronic conditions</li>
+              </ul>
+              <p>It is a major concern in healthcare settings due to its ability to develop resistance, leading to MRSA strains.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Diagnosis & Treatment Section -->
+    <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="lead">The diagnosis of Staphylococcus aureus infections relies on clinical assessment and laboratory confirmation.</p>
+              
+              <h5 class="mt-4 mb-3">Diagnostic Methods</h5>
+              <ul>
+                <li><strong class="highlight">Culture:</strong> Growth on Mannitol Salt Agar, blood agar</li>
+                <li><strong class="highlight">Microscopy:</strong> Gram staining shows Gram-positive cocci in clusters</li>
+                <li><strong class="highlight">Molecular Testing:</strong> PCR for mecA gene in MRSA detection</li>
+                <li><strong class="highlight">Serology:</strong> Not commonly used</li>
+              </ul>
+              
+              <h5 class="mt-4 mb-3">Treatment Approaches</h5>
+              <ul>
+                <li><strong class="highlight">First-line Treatments:</strong> Beta-lactam antibiotics for MSSA</li>
+                <li><strong class="highlight">Alternative Therapies:</strong> Vancomycin, daptomycin for MRSA</li>
+                <li><strong class="highlight">Antimicrobial Resistance:</strong> MRSA strains are resistant to beta-lactams</li>
+                <li><strong class="highlight">Supportive Care:</strong> Wound drainage, intravenous fluids for severe cases</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Prevention & Public Health Section -->
+    <section class="section-title-parallax" style="background-image: url('images/staph_aureus2.jpg');">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-md-10 text-center text-white">
+              <h2 class="mb-4 microbe-header">Prevention & Public Health Considerations</h2>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+       <!-- Prevention Content -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm" style="animation: fadeInLeft 1s forwards 0.3s;">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary"><i class="bi bi-shield-check me-2"></i>Prevention Strategies</h4>
+                            <hr>
+                            <ul>
+                                <li>Hand hygiene and proper sanitation</li>
+                                <li>Wound care and proper bandaging</li>
+                                <li>Prudent use of antibiotics to prevent resistance</li>
+                            </ul>
+                            <p class="mt-3">Preventing <em>Staphylococcus aureus</em> infections relies heavily on hygiene and infection control measures, especially in hospital settings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm" style="animation: fadeInRight 1s forwards 0.6s;">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary"><i class="bi bi-globe me-2"></i>Global Impact</h4>
+                            <hr>
+                            <p><em>Staphylococcus aureus</em>, particularly MRSA strains, is a major public health threat worldwide.</p>
+                            <div class="d-flex align-items-center mt-3 mb-3">
+                                <div style="width: 120px; height: 120px; border-radius: 50%; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                    <span class="fs-2 fw-bold text-primary">33%</span>
+                                </div>
+                                <div>
+                                    <p class="mb-0">About one in three people carry <em>S. aureus</em> bacteria in their nose, and about 2% carry MRSA.</p>
+                                </div>
+                            </div>
+                            <p>Although many people carry MRSA bacteria in their nose, most do not develop serious MRSA infections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- References Section -->
+    <section class="section-title-parallax" style="background-image: url('images/staph_aureus2.jpg');">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center text-white">
+                    <h2 class="mb-4 microbe-header">References</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <!-- References Content -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="card shadow-sm" style="animation: fadeInUp 1s forwards 0.3s;">
+                <div class="card-body">
+                    <ol class="mb-0 references-list">
+                        <li class="mb-3"><a href="https://www.cdc.gov/staphylococcus-aureus/about/index.html" target="_blank">CDC: About Staphylococcus aureus</a></li>
+                        <li class="mb-3"><a href="https://www.msdmanuals.com/home/infections/bacterial-infections-gram-positive-bacteria/staphylococcus-aureus-infections#Symptoms_v38708423" target="_blank">MSD Manuals: Staphylococcus aureus Infections</a></li>
+                        <li class="mb-3"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4451395/" target="_blank">PMC: Clinical Review of Staphylococcus aureus</a></li>
+                        <li class="mb-3"><a href="https://www.cdc.gov/mrsa/hcp/clinical-overview/index.html#cdc_clinical_overview_disease_rates-how-common-it-is" target="_blank">CDC: MRSA Clinical Overview</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Next/Previous Microbe Navigation -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="[previous-microbe].html" class="card shadow-sm h-100 text-decoration-none">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="bi bi-arrow-left me-3 fs-4"></i>
+                            <div>
+                                <small class="text-muted d-block">Previous</small>
+                                <span class="text-dark">[Previous Microbe Name]</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="[next-microbe].html" class="card shadow-sm h-100 text-decoration-none">
+                        <div class="card-body d-flex align-items-center justify-content-end">
+                            <div class="text-end">
+                                <small class="text-muted d-block">Next</small>
+                                <span class="text-dark">[Next Microbe Name]</span>
+                            </div>
+                            <i class="bi bi-arrow-right ms-3 fs-4"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">About MicroWorld</h5>
+                    <p>Exploring the fascinating world of microbiology and its impact on human health through education, research, and collaboration.</p>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Research Papers</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2024 MicroWorld. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        window.addEventListener("load", function () {
+          setTimeout(function () {
+            document.querySelector(".preloader").classList.add("hide");
+          }, 1000); // Preloader lasts 1 second
+          
+          // Parallax effect for section titles
+          window.addEventListener('scroll', function() {
+            const parallaxElements = document.querySelectorAll('.section-title-parallax');
+            parallaxElements.forEach(element => {
+              const scrollPosition = window.pageYOffset;
+              const position = element.offsetTop;
+              const distance = position - scrollPosition;
+              
+              if(Math.abs(distance) < window.innerHeight) {
+                const speed = 0.5;
+                const yPos = -(distance * speed);
+                element.style.backgroundPositionY = yPos + 'px';
+              }
+            });
+          });
+        });
+    </script>
+
+    <!-- Bootstrap 5 Bundle (includes Popper) JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
