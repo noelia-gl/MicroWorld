@@ -783,28 +783,160 @@
 }
 
 
-
-
-
-
-
-/* Contact Form Section **************************************/
-.section-contact .card {
-  border: none;
-  border-radius: 15px;
+/* Exercises Section**************************************/
+.exercise-link {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  position: relative;
+  display: block;
+  background-color: #f5f5f5;
 }
 
-.section-contact .form-control,
-.section-contact .form-select {
-  border-radius: 8px;
-  padding: 12px;
-  border: 1px solid #dee2e6;
+.exercise-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.section-contact .form-control:focus,
-.section-contact .form-select:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+.exercise-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(111, 66, 193, 0.2);
+}
+
+.exercise-link:hover img {
+  transform: scale(1.05);
+}
+
+.exercise-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(140, 109, 197, 0.9), rgba(148, 134, 173, 0.7), transparent);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.exercise-link:hover .exercise-overlay {
+  transform: translateY(0);
+}
+
+.exercise-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Lora', serif;
+  display: block;
+  padding: 10px 0;
+}
+
+
+
+/* zoom Container Data Model *********************/
+#zoomContainer {
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+#zoomableImage {
+  display: block;
+  max-width: none; 
+  position: relative;
+  transition: transform 0.2s ease-out;
+}
+
+#zoomContainer::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+#zoomContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#zoomContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+#zoomContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+/* About Me Section **************************************/
+.card-text p {
+  text-align: justify;
+}
+
+h2, .section-title {
+  font-family: 'Lora', serif;
+}
+
+.card-title {
+  font-family: 'Lora', serif;
+}
+
+:root {
+  --purple-primary: #6a1b9a; 
+  --purple-light: #9c4dcc;
+  --purple-ultra-light: #dac6dd;
+}
+
+.purple-underline {
+  height: 3px;
+  width: 100px;
+  background-color: var(--purple-primary);
+  margin-top: 15px;
+}
+
+.card-accent-left {
+  position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: var(--purple-primary);
+}
+
+.section-about-me {
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.section-about-me .card {
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.section-about-me .card:hover {
+  transform: translateY(-5px);
+}
+
+.purple-wave-bottom {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.purple-wave-bottom svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.purple-wave-bottom svg path {
+  fill: var(--purple-ultra-light);
 }
 
 
@@ -933,6 +1065,13 @@ footer .social-links a:hover {
   
   .carousel-caption {
     top: 50%;
+  }
+  
+  .purple-shape {
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right: 2%;
   }
 }
 
